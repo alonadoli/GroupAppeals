@@ -48,6 +48,8 @@ The package provides a streamlined approach:
 - ✅ **Policy detection**: NLI-based approach for policy identification (binary detector)
 - ✅ **Group classification**: Multi-label classification of social group categories
 
+We thank Josh Allen (joshuafayallen), Dylan Paltra (dpltr22) and Marvin Stecker (vestedinterests) for their support and contributions to the release of this package.
+
 ### Performance Considerations
 
 - **Batch processing** optimizes performance for multiple texts
