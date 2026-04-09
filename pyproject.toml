@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "groupappeals"
+version = "1.0.8"
+description = "A toolkit for analyzing group appeals in text using fine-tuned language models optimized for direct plain text processing"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Alona O. Dolinsky", email = "adolins2@jhu.edu"},
+    {name = "Will Horne", email = "rwhorne@clemson.edu"},
+    {name = "Lena Maria Huber", email = "lena.huber@uni-mannheim.de"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "torch>=2.3.1",
+    "transformers>=4.20.0",
+    "pandas>=1.3.0",
+    "numpy>=1.21.0",
+    "tqdm>=4.62.0",
+    "openpyxl>=3.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/alonadoli/GroupAppeals"
+
+[project.scripts]
+groupappeals = "groupappeals:cli_main"
+
+[tool.setuptools]
+packages = ["groupappeals"]
