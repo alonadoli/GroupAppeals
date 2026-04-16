@@ -97,7 +97,7 @@ The package follows a 6-step workflow:
 
 ## Documentation
 
-For detailed usage examples, API reference, and advanced features, see our [complete documentation](DOCUMENTATION.md).
+For detailed usage examples, API reference, and advanced features, see our [complete documentation](https://github.com/alonadoli/GroupAppeals/blob/main/DOCUMENTATION.md).
 
 ## Requirements
 

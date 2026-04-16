@@ -23,7 +23,7 @@ from .device_utilities import determine_compute_device, convert_device_to_pipeli
 # Full pipeline import
 from .fullpipeline import run_full_pipeline
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 # CLI entry point
 def cli_main():
