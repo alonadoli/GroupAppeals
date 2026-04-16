@@ -8,7 +8,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="groupappeals",
-    version="1.0.1",  # Removed all obsolete feature references, cleaned documentation
+    version="1.0.2",  # Removed all obsolete feature references, cleaned documentation
     author="Alona O. Dolinsky; Will Horne; Lena Maria Huber",
     author_email="adolins2@jhu.edu; rwhorne@clemson.edu; lena.huber@uni-mannheim.de",
     description="A toolkit for analyzing group appeals in text using fine-tuned language models optimized for direct plain text processing",

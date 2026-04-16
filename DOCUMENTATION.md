@@ -325,7 +325,7 @@ Processes a CSV file to extract entities from text.
 - `input_file` (str): Path to input CSV file
 - `text_column` (str): Column containing text to analyze (default: "text")
 - `id_column` (str): Column containing identifiers (default: "text_id")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `device` (str, optional): Device to use for computation ('cuda', 'mps', or 'cpu') - auto-detected if not specified
 
 **Returns:**
@@ -557,7 +557,7 @@ Processes CSV files to detect stance towards groups.
 - `input_file` (str): Path to input CSV file
 - `text_column` (str): Column containing text to analyze (default: "text")
 - `group_column` (str): Column containing group references (default: "Exact.Group.Text")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `model_name` (str): Hugging Face NLI model name
 - `batch_size` (int): Batch size for processing (default: 32)
 - `device` (str, optional): Device to use for computation
@@ -744,7 +744,7 @@ Processes CSV files to detect policies towards groups.
 - `input_file` (str): Path to input CSV file
 - `text_column` (str): Column containing text to analyze (default: "text")
 - `group_column` (str): Column containing group references (default: "Exact.Group.Text")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `model_name` (str): Hugging Face NLI model name
 - `batch_size` (int): Batch size for processing (default: 32)
 - `device` (str, optional): Device to use for computation
@@ -927,7 +927,7 @@ Processes CSV files to classify group references into categories.
 **Parameters:**
 - `input_file` (str): Path to input CSV file
 - `group_column` (str): Column containing group references (default: "Exact.Group.Text")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `model_repo` (str): Hugging Face model repository
 - `score_threshold` (float): Threshold for accepting predictions (default: 0.5)
 - `device` (str, optional): Device to use for computation
@@ -2202,7 +2202,7 @@ Process a CSV file to extract entities from text.
 - `input_file` (str): Path to input CSV file
 - `text_column` (str): Column containing text to analyze (default: "text")
 - `id_column` (str): Column containing identifiers (default: "text_id")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `device` (str, optional): Device to use for computation ('cuda', 'mps', or 'cpu') - auto-detected if not specified
 
 **Returns:**
@@ -2238,7 +2238,7 @@ Process CSV files to detect stance towards groups.
 - `input_file` (str): Path to input CSV file
 - `text_column` (str): Column containing text (default: "text")
 - `group_column` (str): Column containing group references (default: "Exact.Group.Text")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `model_name` (str): Hugging Face model name
 - `batch_size` (int): Batch size (default: 32)
 - `device` (str, optional): Device to use
@@ -2278,7 +2278,7 @@ Process CSV files to detect policies directed towards groups.
 - `input_file` (str): Path to input CSV file
 - `text_column` (str): Column containing text (default: "text")
 - `group_column` (str): Column containing group references (default: "Exact.Group.Text")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `model_name` (str): Hugging Face model name
 - `batch_size` (int): Batch size (default: 32)
 - `device` (str, optional): Device to use
@@ -2315,7 +2315,7 @@ Process CSV files to classify group references into categories.
 **Parameters:**
 - `input_file` (str): Path to input CSV file
 - `group_column` (str): Column containing group references (default: "Exact.Group.Text")
-- `output_file` (str, optional): Path to save results
+- `output_file` (str, optional): Full file path to save results (e.g., `"results.csv"` or `"/path/to/output.csv"`). Must include the filename — a directory path alone will fail.
 - `model_repo` (str): Hugging Face model repository
 - `score_threshold` (float): Threshold for accepting predictions (default: 0.5)
 - `device` (str, optional): Device to use
